@@ -1,0 +1,9 @@
+4. Cho bi?t các phuong th?c vòng d?i du?c g?i khi ?ng d?ng dang ch?y và ngu?i s? d?ng b?m vào nút back sau dó m? l?i ?ng d?ng. 
+    +Sau khi ?n phím Back: onPause() -> onStop() -> onDestroy()
+    +Khi m? l?i ?ng d?ng: onCreate() -> onStart() -> onResume()
+5. Cho bi?t các phuong th?c vòng d?i du?c g?i khi ?ng d?ng dang ch?y và ngu?i s? d?ng b?m vào nút home và sau dó m? l?i ?ng d?ng. 
+    +Khi ngu?i dùng ?n phím Home: onPause() -> onStop()
+    +Khi m? l?i ?ng d?ng: onRestart() -> onStart() -> onResume()
+6. N?u c?n luu thông tin c?a ?ng d?ng d? khôi ph?c l?i tr?ng thái hi?n th? c?a ?ng d?ng khi ch?y l?i ?ng d?ng thì c?n ph?i th?c hi?n trong phuong th?c vòng d?i nào? vì sao?	
+    +Ta c?n ph?i th?c hi?n trong phuong th?c  : onCreate()
+    +Vì :onCreate() callback t?i thi?u trong m?t Activity mà ta ph?i th?c hi?n, onCreate() này du?c g?i khá s?m, ngay khi Activity du?c kích ho?t . Ngoài ra callback này ch? du?c g?i m?t l?n duy nh?t khi Activity du?c kh?i t?o. Nó có th? du?c g?i l?i n?u h? th?ng xóa Activity này di d? l?y l?i tài nguyên c?a h? th?ng
