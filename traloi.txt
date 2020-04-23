@@ -6,4 +6,4 @@
     - Khi mở lại ứng dụng: onRestart() -> onStart() -> onResume()
 6. Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời nào? vì sao? 	
     +Ta cần phải thực hiện trong phuong thức  : onCreate()
-    +Vì :onCreate() callback tối thiểu trong một Activity mà ta phải thực hiện, onCreate() này được gửi khá sớm, ngay khi Activity được kích hoạt . Ngoài ra callback này chỉ được gửi một lần duy nhất khi Activity được khởi tạo. Nó có thể được gọi lại nếu hệ thống xóa Activity này đi để lấy lại tài nguyên của hệ thống.
+    +Vì :onCreate() callback tối thiểu trong một Activity mà ta phải thực hiện, onCreate() này được gửi khá sớm, ngay khi Activity được kích hoạt . Ngoài ra callback này chỉ được gửi một lần duy nhất khi Activity được khởi tạo. Nó có thể được gọi lại nếu hệ thống xóa Activity này đi để lấy lại tài nguyên của hệ thống .
