@@ -1,9 +1,9 @@
-4. Cho bi?t c�c phuong th?c v�ng d?i du?c g?i khi ?ng d?ng dang ch?y v� ngu?i s? d?ng b?m v�o n�t back sau d� m? l?i ?ng d?ng. 
-    +Sau khi ?n ph�m Back: onPause() -> onStop() -> onDestroy()
-    +Khi m? l?i ?ng d?ng: onCreate() -> onStart() -> onResume()
-5. Cho bi?t c�c phuong th?c v�ng d?i du?c g?i khi ?ng d?ng dang ch?y v� ngu?i s? d?ng b?m v�o n�t home v� sau d� m? l?i ?ng d?ng. 
-    +Khi ngu?i d�ng ?n ph�m Home: onPause() -> onStop()
-    +Khi m? l?i ?ng d?ng: onRestart() -> onStart() -> onResume()
-6. N?u c?n luu th�ng tin c?a ?ng d?ng d? kh�i ph?c l?i tr?ng th�i hi?n th? c?a ?ng d?ng khi ch?y l?i ?ng d?ng th� c?n ph?i th?c hi?n trong phuong th?c v�ng d?i n�o? v� sao?	
-    +Ta c?n ph?i th?c hi?n trong phuong th?c  : onCreate()
-    +V� :onCreate() callback t?i thi?u trong m?t Activity m� ta ph?i th?c hi?n, onCreate() n�y du?c g?i kh� s?m, ngay khi Activity du?c k�ch ho?t . Ngo�i ra callback n�y ch? du?c g?i m?t l?n duy nh?t khi Activity du?c kh?i t?o. N� c� th? du?c g?i l?i n?u h? th?ng x�a Activity n�y di d? l?y l?i t�i nguy�n c?a h? th?ng
+4. Cho biết các phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử dụng bấm vào nút back sau đó mở lại ứng dụng. 
+    - Sau khi ấn phím Back: onPause() -> onStop() -> onDestroy()
+    - Khi mở lại ứng dụng: onCreate() -> onStart() -> onResume()
+5. Cho biết các phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử dụng bấm vào nút home và sau đó mở lại ứng dụng. 
+    - Khi người dùng ấn phím Home: onPause() -> onStop()
+    - Khi mở lại ứng dụng: onRestart() -> onStart() -> onResume()
+6. Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời nào? vì sao? 	
+    +Ta cần phải thực hiện trong phuong thức  : onCreate()
+    +Vì :onCreate() callback tối thiểu trong một Activity mà ta phải thực hiện, onCreate() này được gửi khá sớm, ngay khi Activity được kích hoạt . Ngoài ra callback này chỉ được gửi một lần duy nhất khi Activity được khởi tạo. Nó có thể được gọi lại nếu hệ thống xóa Activity này đi để lấy lại tài nguyên của hệ thống.
